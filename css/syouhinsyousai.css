@@ -3,6 +3,12 @@ html,body{
 	height: 95%;
 		box-sizing: border-box;
 }
+body{
+	width: 1000px;
+	height: 900px;
+	margin: 0 auto;
+}
+
 .header{
 	height: 20%;
 	box-sizing: border-box;
@@ -23,7 +29,7 @@ html,body{
 	box-sizing: border-box;
 }
 .menuheading{
-		font-size: 20px;
+		font-size: 1.4em;
 	float: left;
 	border: solid 1px;
 	width: 100%;
@@ -42,14 +48,26 @@ html,body{
 .menuleft{
 	float: left;
 	width: 50%;
-	height: 50%
+	height: 50%;
+	padding-left: 50px;
 	box-sizing: border-box;
+}
+.menuleft > img {
+	height: 170px;
+	width: 170px;
+
 }
 .menuright{
 	float: left;
 	width: 50%;
 	height: 50%;
 	box-sizing: border-box;
+}
+.pricezei{
+		font-size: 1.4em;
+}
+.description{
+		font-size: 1.2em;
 }
 /*************サイズ****************/
 
@@ -60,7 +78,7 @@ html,body{
 	box-sizing: border-box;
 }
 .sizeheading{
-		font-size: 20px;
+		font-size: 1.4em;
 	float: left;
 	border: solid 1px;
 	width: 100%;
@@ -103,12 +121,38 @@ html,body{
 	float: left;
 	height: 10%;
 	width:100%;
-	padding: 20px;
 	border: solid 1px;
 	box-sizing: border-box;
 	font-size: 20px;
+		font-size: 1.4em;
+}
+.selectleft{
+	float: left;
+		padding: 20px;
+		padding-left: 50px;
+	width: 40%;
+	height: 100%;
+
+	box-sizing: border-box;	
+}
+.selectleft > select{
+		font-size: 1.0em;
 }
 
+.selectcenter{
+	float: left;
+	padding: 20px;
+	width: 34%;
+	height: 100%;
+	box-sizing: border-box;		
+}
+
+.selectright{
+	float: left;
+	width: 26%;
+	height: 100%;
+	box-sizing: border-box;
+}
 /****一覧へ戻る******/
 
 .itiran{
