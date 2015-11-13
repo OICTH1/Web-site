@@ -1,0 +1,17 @@
+﻿
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# On branch master
+# Your branch is up-to-date with 'origin/master'.
+#
+# Changes to be committed:
+#	modified:   css/syouhinsyousai.css
+#	modified:   html/syouhinsyousai.html
+#	new file:   img/cart.png
+#	new file:   img/l.png
+#	new file:   img/m.png
+#	new file:   img/pizza.jpg
+#	new file:   img/s.png
+#	new file:   prepros.cfg
+#
+

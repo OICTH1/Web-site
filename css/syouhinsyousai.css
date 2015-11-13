@@ -5,7 +5,6 @@ html,body{
 }
 body{
 	width: 1000px;
-	height: 900px;
 	margin: 0 auto;
 }
 
@@ -24,23 +23,24 @@ body{
 /*******メニュー*********/
 .menu{
 	float: left;
-	height: 40%;
+	height:300px;
 	width: 100%;
 	box-sizing: border-box;
 }
 .menuheading{
-		font-size: 1.4em;
+		font-size: 1.6em;
 	float: left;
+	padding-top: 8px;
 	border: solid 1px;
 	width: 100%;
-	height: 10%;
+	height: 15%;
 	text-align : center;
 	box-sizing: border-box;
 }
 
 .menuin{
 	float: left;
-	height: 90%;
+	height: 85%;
 	width: 100%;
 	border: 5px;
 	box-sizing: border-box;
@@ -69,27 +69,30 @@ body{
 .description{
 		font-size: 1.2em;
 }
+/*******メニュー*********/
 /*************サイズ****************/
 
 .size{
 	float: left;
-	height: 40%;
+	height: 300px;
 	width: 100%;
 	box-sizing: border-box;
 }
 .sizeheading{
-		font-size: 1.4em;
+		font-size: 1.6em;
 	float: left;
+	padding-top: 7px;
 	border: solid 1px;
 	width: 100%;
-	height: 10%;
+	height: 15%;
 	box-sizing: border-box;
 		  text-align : center;
 }
 .sizein{
 		font-size: 20px;
 	float: left;
-	height: 90%;
+	padding-top: 10px;
+	height: 85%;
 	width: 100%;
 	box-sizing: border-box;
 }
@@ -99,6 +102,9 @@ body{
 	height: 100%;
 	width: 33%;
 	box-sizing: border-box;
+}
+.s >img{
+		height: 10em;
 }
 .m{
 	text-align : center;
@@ -115,51 +121,62 @@ body{
 	box-sizing: border-box;
 }
 
+/*************サイズ****************/
 /*********セレクト&数量選択カート移動***********/
 
 .select{
 	float: left;
-	height: 10%;
+	height: 70px;
 	width:100%;
 	border: solid 1px;
 	box-sizing: border-box;
-	font-size: 20px;
-		font-size: 1.4em;
+	font-size: 1.4em;
 }
 .selectleft{
 	float: left;
-		padding: 20px;
-		padding-left: 50px;
-	width: 40%;
+	font-size:1.2em;
+	padding: 20px;
+	padding-left: 80px;
+	width: 34%;
 	height: 100%;
 
 	box-sizing: border-box;	
 }
 .selectleft > select{
-		font-size: 1.0em;
+	font-size: 1.0em;
 }
 
 .selectcenter{
 	float: left;
-	padding: 20px;
-	width: 34%;
+	font-size:1.2em;
+	padding-top: 20px;
+	width: 40%;
 	height: 100%;
 	box-sizing: border-box;		
 }
 
 .selectright{
 	float: left;
+	font-size:0.9em;
+	padding-left: 55px;
 	width: 26%;
 	height: 100%;
+	background-image: url("../img/cart.png");
+	background-size: contain;
 	box-sizing: border-box;
 }
+.selectright{
+
+}
+/*********セレクト&数量選択カート移動***********/
 /****一覧へ戻る******/
 
 .itiran{
 	float: left;
 	padding-top: 30px;
-	height: 10%;
+	height: 10px;
 	width: 100%;
 	text-align : center;
 	box-sizing: border-box;
 }
+/****一覧へ戻る******/
