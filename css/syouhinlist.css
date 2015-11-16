@@ -6,6 +6,7 @@ html,body{
 body{
 	width: 1000px;
 	margin: 0 auto;
+    box-sizing: border-box;
 }
 
 .header{
@@ -34,14 +35,57 @@ body{
 	text-align : center;
 	box-sizing: border-box;
 }
-.list{
-	float: left;
-	height:600px;
-	width: 100%;
-	box-sizing: border-box;
-}
 
+.listitem{
+    float: left;
+    border: solid 1px;
+    width: 240px;
+    height: 340px;
+    padding: 5px;
+    margin: 10px;
+    box-sizing: border-box;
+}
+.img{
+    height: 180px;
+    margin
+}
+.img > img{
+    float: left;
+    height: 100%;
+    width: 100%;
+}
+.pizzaname{
+    font-size: 19px;
+    margin-top: 5px;
+}
+.pricezei{
+    margin-top: 10px;
+    font-size: 17.5px;
+    height: 18px;
+}
+.price{
+    font-size: 16px;
+    height: 18px;
+}
+.description{
+    margin-top: 5px;
+    height: 55px;
+
+}
+.syousai{
+    text-align: center;
+    border: solid 2px;
+    box-sizing: border-box;
+}
 /***********商品リスト部分*************/
 /**********トップページに戻る***********/
 
+.toppage{
+    height: 20px;
+    float: left;
+    width: 20%;
+    margin: 5% 40% 5% 40%;
+    text-align : center;
+    border: solid 2px;
+}
 /**********トップページに戻る***********/
