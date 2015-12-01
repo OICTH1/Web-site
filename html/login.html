@@ -4,6 +4,16 @@
         <meta charset="UTF-8">
         <title>ログイン</title>
         <link rel="stylesheet" type="text/css" href="../css/login.css">
+        <script type="text/javascript" src="../js/jquery/jquery.js"></script>
+        <script>
+        $(function(){
+            $('.login').click(function(){
+                var mail = $('#form-mail').val();
+                var pass = $('#form-pass').val();
+                alert(mail);
+            });
+        });
+        </script>
     </head>
     <body>
         <div class="header"></div>
@@ -15,7 +25,7 @@
                 <div class="form">
                    <form action="" method="">
                     <p>
-                        ご登録のメールアドレス　<input type="text" name="mail" size="40">
+                        ご登録のメールアドレス　<input type="text" name="mail" size="40" id="form-mail">
                     </p>
                     <p>
                         　　　　　　　　パスワード　<input type="password" name="pass" size="40">

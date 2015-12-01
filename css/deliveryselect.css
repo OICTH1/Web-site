@@ -33,6 +33,7 @@ body{
     box-sizing: border-box;
     margin-bottom: 20px;
 }
+
 /******ご注文内容部分*******/
 .cart{
     float: left;
@@ -91,6 +92,10 @@ body{
 
 /******ご注文内容部分*******/
 /**********配達先住所部分***********/
+.title{
+    font-size: 25px;
+    padding-bottom: 5px;
+}
 .delivery{
     float: left;
     font-size: 22px;
@@ -130,7 +135,6 @@ body{
     padding-top: 7%;
     text-align: center;
     box-sizing: border-box;
-    border-right: solid 1px;
 }
 
 .deliverytopright{
@@ -138,6 +142,7 @@ body{
     width: 90%;
     height: 100%;
     padding: 10px;
+    border-left: solid 1px;
     box-sizing: border-box;
 }
 
@@ -153,17 +158,56 @@ body{
     padding-top: 3%;
     text-align: center;
     box-sizing: border-box;
-    border-right: solid 1px;
 }
 
 .deliverybottomright{
     float: left;
     width: 90%;
-    height: 100%;
-    padding: 10px;
+    height: auto;
+    padding: 0px;
     padding-top: 25px;
+    border-left: solid 1px;
     box-sizing: border-box;
 }
+
+/**********配達先住所　入力　部分***********/
+.deliveryin{
+    float: left;
+    font-size: 22px;
+    width: 100%;
+    height: 290px;
+    margin: 10px 0px 10px 0px;
+    padding: 10px;
+    border-top: solid 1px;
+    box-sizing: border-box;
+    display: none;
+}
+
+.formleft{
+    float:  left;
+    font-size: 24px;
+    height: 100%;
+    width: 30%;
+    text-align: left;
+    padding-left: 2%;
+    box-sizing: border-box;
+}
+
+.formright{
+    float:  left;
+    height: 100%;
+    width: 70%;
+    font-size: 22px;
+    text-align: left;
+    box-sizing: border-box;
+}
+
+input {
+	font-size: 70%;
+}
+
+.setumei{font-size: 16px;}
+/**********配達先住所　入力　部分***********/
 
 /**********配達先住所部分***********/
 /*********確定戻る***********/

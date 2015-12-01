@@ -2,8 +2,29 @@
 <html lang="jp">
     <head>
         <meta charset="UTF-8">
-        <title>注文確認</title>
+        <title>配達先選択</title>
         <link rel="stylesheet" type="text/css" href="../css/deliveryselect.css">
+        <script type="text/javascript" src="../js/jquery/jquery.js"></script>
+        <script>
+            $(function(){
+                $('.kettei').click(function(){
+                    var delivary = $(':radio[name="delivery"]:checked').val();
+                    alert(delivary);
+                });
+                
+                $('input[name="delivery"]:radio').change( function(){
+                    var $delivery = $('.deliveryin');
+                    if($delivery.hasClass('open')) {
+                        $delivery.removeClass('open');
+                        $delivery.slideUp();
+
+                    } else {
+                        $delivery.addClass('open');
+                        $delivery.slideDown();
+                    }
+                })
+        });
+        </script>
     </head>
     <body>
         <div class="header"></div>
@@ -81,10 +102,10 @@
             <div class="delivery">
                 <div class="deliverytop">
                     <div class="deliverytopleft">
-                        <input type="radio" name="delivery" value="1">
+                        <input type="radio" name="delivery" value="1" id="form-delivery" checked>
                     </div>
                     <div class="deliverytopright">
-                   登録している住所に配達する
+                        <span class="title">登録している住所に配達する</span>
                         <div class="yubin">
                             777-7777
                         </div>
@@ -98,11 +119,33 @@
                 </div>
                 <div class="deliverybottom">
                     <div class="deliverybottomleft">
-                        <input type="radio" name="delivery" value="0">
+                        <input type="radio" name="delivery" value="0" id="form-etc">
                     </div>
                     <div class="deliverybottomright">
-                        その他の住所に配達する
+                        <span class="title">その他の住所に配達する</span>
+                        <div class="deliveryin">
+                            <div class="formleft">
+                                郵便番号　[必須]
+                                <p>住所　[必須]</p>
+                                <p>番地　[必須]</p>
+                                <p>号以降</p>
+                                <p>建物名</p>
+                                <p>会社名</p>
+                            </div>
+                            <div class="formright">
+                                <form action="" method="">
+                                    <input type="text" name="postal"  size="7">　　　<input type="button" name="kensaku" value="検索"><span class="setumei">　　　　-は含まない</span>
+                                    <p><input type="text" name="jyusyo" size="40"></p>
+                                    <p><input type="text" name="banti" size="40"></p>
+                                    <p><input type="text" name="gouikou" size="40"></p>
+                                    <p><input type="text" name="tatemono" size="40"><span class="setumei">　　　部屋番号・フロア番号も含む</span>
+                                    </p>
+                                    <p><input type="text" name="kaisya" size="40"></p>
+                                </form>
+                            </div>
+                        </div>
                     </div>
+                    
                 </div>
             </div>
             <div class="kettei">
