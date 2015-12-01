@@ -22,7 +22,7 @@ body{
 /***** コンテンツ全体 *****/
 
 /*******見出しの所****/
-.cartheading,.deliveryheading,.whereheading {
+.cartheading,.deliveryheading {
     font-size: 1.8em;
     float: left;
     padding-top: 6px;
@@ -95,8 +95,8 @@ body{
     float: left;
     font-size: 22px;
     width: 100%;
-    margin-bottom: 30px;
-    padding: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
     border: solid 1px;
     box-sizing: border-box;
 }
@@ -105,33 +105,75 @@ body{
     float: left;
     width: 100%;
     height: 30px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    box-sizing: border-box;
 }
 
 .jyusyo{
     float: left;
     width: 100%;
     height: 30px;
+    box-sizing: border-box;
+}
+
+.deliverytop{
+    height: 160px;
+    box-sizing: border-box;
+    border-bottom: solid 2px;
+}
+
+.deliverytopleft{
+    float: left;
+    width: 10%;
+    height: 100%;
+    padding-top: 7%;
+    text-align: center;
+    box-sizing: border-box;
+    border-right: solid 1px;
+}
+
+.deliverytopright{
+    float: left;
+    width: 90%;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.deliverybottom{
+    height: 70px;
+    box-sizing: border-box;
+}
+
+.deliverybottomleft{
+    float: left;
+    width: 10%;
+    height: 100%;
+    padding-top: 3%;
+    text-align: center;
+    box-sizing: border-box;
+    border-right: solid 1px;
+}
+
+.deliverybottomright{
+    float: left;
+    width: 90%;
+    height: 100%;
+    padding: 10px;
+    padding-top: 25px;
+    box-sizing: border-box;
 }
 
 /**********配達先住所部分***********/
-/******* whereismypizza ******/
-
-.whereismypizza{
-    float: left;
-    width: 100%;
-    height:  300px;
-    border: solid 1px;
-}
-
-/*******whereismypizza*********/
 /*********確定戻る***********/
-.kakutei{
+.kettei{
     font-size: 1.8em;
     padding-top: 7px;
     height: 40px;
     float: left;
     width: 20%;
-    margin: 2% 40% 0% 40%;
+    margin: 0% 40% 0% 40%;
     text-align : center;
     border: solid 1px;
 }

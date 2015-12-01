@@ -22,7 +22,7 @@ body{
 /***** コンテンツ全体 *****/
 
 /*******見出しの所****/
-.cartheading,.haitatuheading {
+.cartheading,.deliveryheading {
     font-size: 1.8em;
     float: left;
     padding-top: 6px;
@@ -91,7 +91,7 @@ body{
 
 /******ご注文内容部分*******/
 /**********配達先住所部分***********/
-.haitatu{
+.delivery{
     float: left;
     font-size: 22px;
     width: 100%;

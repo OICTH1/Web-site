@@ -22,7 +22,7 @@ body{
 /***** コンテンツ全体 *****/
 
 /*******見出しの所****/
-.cartheading,.deliveryheading,.whereheading {
+.cartheading,.deliveryheading {
     font-size: 1.8em;
     float: left;
     padding-top: 6px;
@@ -95,43 +95,41 @@ body{
     float: left;
     font-size: 22px;
     width: 100%;
-    margin-bottom: 30px;
-    padding: 20px;
+    height: 290px;
+    margin-bottom: 20px;
+    padding: 10px;
     border: solid 1px;
     box-sizing: border-box;
 }
 
-.yubin{
-    float: left;
-    width: 100%;
-    height: 30px;
+.formleft{
+    float:  left;
+    height: 100%;
+    width: 40%;
+    text-align: left;
+    padding-left: 10%;
+    box-sizing: border-box;
 }
 
-.jyusyo{
-    float: left;
-    width: 100%;
-    height: 30px;
+.formright{
+    float:  left;
+    height: 100%;
+    width: 60%;
+    font-size: 22px;
+    text-align: left;
+    box-sizing: border-box;
 }
 
+.setumei{font-size: 18px;}
 /**********配達先住所部分***********/
-/******* whereismypizza ******/
-
-.whereismypizza{
-    float: left;
-    width: 100%;
-    height:  300px;
-    border: solid 1px;
-}
-
-/*******whereismypizza*********/
 /*********確定戻る***********/
-.kakutei{
+.kettei{
     font-size: 1.8em;
     padding-top: 7px;
     height: 40px;
     float: left;
     width: 20%;
-    margin: 2% 40% 0% 40%;
+    margin: 0% 40% 0% 40%;
     text-align : center;
     border: solid 1px;
 }
