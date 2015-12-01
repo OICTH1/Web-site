@@ -8,8 +8,7 @@
         <script>
             $(function(){
                 $('.kettei').click(function(){
-                    var delivary = $(':radio[name="delivery"]:checked').val();
-                    alert(delivary);
+                    alert("test");
                 });
                 
                 $('input[name="delivery"]:radio').change( function(){
@@ -105,6 +104,7 @@
                         <input type="radio" name="delivery" value="1" id="form-delivery" checked>
                     </div>
                     <div class="deliverytopright">
+                       <label for="form-delivery">
                         <span class="title">登録している住所に配達する</span>
                         <div class="yubin">
                             777-7777
@@ -115,6 +115,7 @@
                         <div class="jyusyo">
                             ○○○○○○ビル×××号室
                         </div>
+                        </label>
                     </div>
                 </div>
                 <div class="deliverybottom">
@@ -122,13 +123,13 @@
                         <input type="radio" name="delivery" value="0" id="form-etc">
                     </div>
                     <div class="deliverybottomright">
-                        <span class="title">その他の住所に配達する</span>
+                        <label for="form-etc"><span class="title">その他の住所に配達する</span></label>
                         <div class="deliveryin">
                             <div class="formleft">
                                 郵便番号　[必須]
                                 <p>住所　[必須]</p>
-                                <p>番地　[必須]</p>
-                                <p>号以降</p>
+                                <p>番地　[必須]<br><span class="setumei"><p>　</p></span></p>
+                                <p>号以降<br><span class="setumei"><p>　</p></span</p>
                                 <p>建物名</p>
                                 <p>会社名</p>
                             </div>
@@ -136,8 +137,8 @@
                                 <form action="" method="">
                                     <input type="text" name="postal"  size="7">　　　<input type="button" name="kensaku" value="検索"><span class="setumei">　　　　-は含まない</span>
                                     <p><input type="text" name="jyusyo" size="40"></p>
-                                    <p><input type="text" name="banti" size="40"></p>
-                                    <p><input type="text" name="gouikou" size="40"></p>
+                                    <p><input type="text" name="banti" size="40"></p><span class="setumei"><p>　　　【例】東京都渋谷区恵比寿南1丁目2-3の場合、”2” を入力してください。</p></span>
+                                    <p><input type="text" name="gouikou" size="5"></p><span class="setumei"><p>　　　【例】東京都渋谷区恵比寿南1丁目2-3の場合、”2” を入力してください。</p></span>
                                     <p><input type="text" name="tatemono" size="40"><span class="setumei">　　　部屋番号・フロア番号も含む</span>
                                     </p>
                                     <p><input type="text" name="kaisya" size="40"></p>

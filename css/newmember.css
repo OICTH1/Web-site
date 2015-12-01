@@ -75,7 +75,7 @@ body{
 /*********確定戻る***********/
 .kakunin{
     font-size: 1.8em;
-    padding-top: 7px;
+    padding-top: 0px;
     height: 40px;
     float: left;
     width: 30%;
@@ -84,9 +84,19 @@ body{
     border: solid 1px;
 }
 
+a.biglink{
+    padding-top: 7px;
+     display: block;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+}
+a.biglink:hover{
+    background-color: chartreuse;
+}
+
 .back{
     font-size: 1.6em;
-    padding-top: 7px;
     height: 35px;
     float: left;
     width: 20%;
