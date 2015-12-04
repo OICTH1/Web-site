@@ -10,7 +10,7 @@
                 $('.kettei').click(function(){
                     alert("test");
                 });
-                
+
                 $('input[name="delivery"]:radio').change( function(){
                     var $delivery = $('.deliveryin');
                     if($delivery.hasClass('open')) {
@@ -98,57 +98,82 @@
             <div class="deliveryheading">
                 配達先を選択する
             </div>
-            <div class="delivery">
-                <div class="deliverytop">
-                    <div class="deliverytopleft">
-                        <input type="radio" name="delivery" value="1" id="form-delivery" checked>
+
+            <!--==========配達先選択=====================-->
+            <table class="select-address">
+                <!--==========登録している住所=====================-->
+              <tr>
+                <td>
+                    <input type="radio" name="name" value="" id="select-address">
+                <td>
+                  <h3>登録している住所に配達する</h3>
+                  <div id="registered-address">
+                    <div id="postal">
+                      <span>〒</span><span id="postal-code">XXX-XXXX</span>
                     </div>
-                    <div class="deliverytopright">
-                       <label for="form-delivery">
-                        <span class="title">登録している住所に配達する</span>
-                        <div class="yubin">
-                            777-7777
-                        </div>
-                        <div class="jyusyo">
-                            ○○府○○市○○町×-××
-                        </div>
-                        <div class="jyusyo">
-                            ○○○○○○ビル×××号室
-                        </div>
-                        </label>
+                    <div id="address1">
+                      ○○府○○市○○町×-××
                     </div>
-                </div>
-                <div class="deliverybottom">
-                    <div class="deliverybottomleft">
-                        <input type="radio" name="delivery" value="0" id="form-etc">
+                    <div id="address2">
+                      ○○○○○○ビル×××号室
                     </div>
-                    <div class="deliverybottomright">
-                        <label for="form-etc"><span class="title">その他の住所に配達する</span></label>
-                        <div class="deliveryin">
-                            <div class="formleft">
-                                郵便番号　[必須]
-                                <p>住所　[必須]</p>
-                                <p>番地　[必須]<br><span class="setumei"><p>　</p></span></p>
-                                <p>号以降<br><span class="setumei"><p>　</p></span</p>
-                                <p>建物名</p>
-                                <p>会社名</p>
-                            </div>
-                            <div class="formright">
-                                <form action="" method="">
-                                    <input type="text" name="postal"  size="7">　　　<input type="button" name="kensaku" value="検索"><span class="setumei">　　　　-は含まない</span>
-                                    <p><input type="text" name="jyusyo" size="40"></p>
-                                    <p><input type="text" name="banti" size="40"></p><span class="setumei"><p>　　　【例】東京都渋谷区恵比寿南1丁目2-3の場合、”2” を入力してください。</p></span>
-                                    <p><input type="text" name="gouikou" size="5"></p><span class="setumei"><p>　　　【例】東京都渋谷区恵比寿南1丁目2-3の場合、”2” を入力してください。</p></span>
-                                    <p><input type="text" name="tatemono" size="40"><span class="setumei">　　　部屋番号・フロア番号も含む</span>
-                                    </p>
-                                    <p><input type="text" name="kaisya" size="40"></p>
-                                </form>
-                            </div>
-                        </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input type="radio" name="name" value="" id="select-other">
+                </td>
+                <td>
+                  <h3>住所を指定して配達する</h3>
+
+                  <form class="other-form">
+                    <hr>
+                    <!--郵便番号-->
+                    <div class="form-postal">
+                      <div class="form-label required">郵便番号</div>
+                      <div class="form-input">
+                        <input type="text" name="postal-code" value="">
+                        <input type="button" name="address-search" value="検索" id="address-search">
+                      </div>
+                      <div class="form-describe">-は含まない</div>
                     </div>
-                    
-                </div>
-            </div>
+                    <!--都道府県、市区町村-->
+                    <div class="form-address-1">
+                      <div class="form-label required">住所</div>
+                      <div class="form-input"><input type="text" name="address1" value=""></div>
+                      <div class="form-describe">【例】東京都渋谷区恵比寿南1丁目2-3の場合、”東京都渋谷区恵比寿南1丁目” を入力してください。</div>
+                    </div>
+                    <!--番地-->
+                    <div class="form-address-2">
+                      <div class="form-label required">番地</div>
+                      <div class="form-input"><input type="text" name="address2" value=""></div>
+                      <div class="form-describe">【例】東京都渋谷区恵比寿南1丁目2-3の場合、”2” を入力してください。</div>
+                    </div>
+                    <!--号-->
+                    <div class="form-address-3">
+                      <div class="form-label">号</div>
+                      <div class="form-input"><input type="text" name="address3" value=""></div>
+                      <div class="form-describe">【例】東京都渋谷区恵比寿南1丁目2-3の場合、”3” を入力してください。</div>
+                    </div>
+                    <h3>マンション、ビル、アパートの場合</h3>
+                    <!--建物名-->
+                    <div class="form-builname">
+                      <div class="form-label">建物名</div>
+                      <div class="form-input"><input type="text" name="billname" value=""></div>
+                      <div class="form-describe">部屋番号・フロア番号も含む</div>
+                    </div>
+                    <!--会社名-->
+                    <div class="form-companyname">
+                      <div class="form-label ">会社名</div>
+                      <div class="form-input"><input type="text" name="companyname" value=""></div>
+                      <div class="form-describe"></div>
+                    </div>
+
+                  </form>
+                </td>
+              </tr>
+            </table>
             <div class="kettei">
                 <a>決定</a>
             </div>
