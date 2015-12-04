@@ -27,9 +27,13 @@ body{
 
 /*******見出しの所****/
 .cartheading,.deliveryheading {
-    font-size: 1.8em;
+    font-size: 30px;
     float: left;
+<<<<<<< HEAD
     padding: 6px 0;
+=======
+    padding: 6px 0px 6px 0px;
+>>>>>>> e7266391480ebe6908ad02744acfd61245d9ec1d
     border: solid 1px;
     width: 100%;
     text-align : center;
@@ -105,8 +109,16 @@ body{
   height: 100%;
 }
 
+<<<<<<< HEAD
 .select-address td{
   border: solid 1px;
+=======
+.address{
+    float: left;
+    width: 100%;
+    height: 30px;
+    box-sizing: border-box;
+>>>>>>> e7266391480ebe6908ad02744acfd61245d9ec1d
 }
 
 /*選択詳細*/
@@ -143,6 +155,7 @@ body{
   text-decoration: underline;
   clear: both;
 }
+
 
 /*********確定戻る***********/
 .kettei{

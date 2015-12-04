@@ -23,12 +23,11 @@ body{
 
 /*******見出しの所****/
 .cartheading,.deliveryheading,.whereheading {
-    font-size: 1.8em;
+    font-size: 30px;
     float: left;
-    padding-top: 6px;
+    padding: 6px 0px 6px 0px;
     border: solid 1px;
     width: 100%;
-    height: 6%;
     text-align : center;
     box-sizing: border-box;
     margin-bottom: 20px;
@@ -107,7 +106,7 @@ body{
     height: 30px;
 }
 
-.jyusyo{
+.address{
     float: left;
     width: 100%;
     height: 30px;

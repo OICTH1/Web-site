@@ -1,43 +1,45 @@
 /***** コンテンツ全体 *****/
 html,body{
-	height: 95%;
-		box-sizing: border-box;
+    height: 95%;
+    box-sizing: border-box;
 }
 body{
-	width: 1000px;
-	margin: 0 auto;
+    width: 1000px;
+    margin: 0 auto;
+    box-sizing: border-box;
 }
 
 .header{
-	height: 20%;
-	box-sizing: border-box;
+    height: 20%;
+    box-sizing: border-box;
 }
 .contents{
-	padding: 10px 10px 10px 10px;
-	height: 80%;
-	box-sizing: border-box;
+    padding: 10px 10px 10px 10px;
+    height: 80%;
+    box-sizing: border-box;
 }
+
+/***** コンテンツ全体 *****/
 /*******メニュー*********/
 .menu{
 	float: left;
-	height:300px;
 	width: 100%;
 	box-sizing: border-box;
 }
-.menuheading{
-		font-size: 1.6em;
-	float: left;
-	padding-top: 8px;
-	border: solid 1px;
-	width: 100%;
-	height: 15%;
-	text-align : center;
-	box-sizing: border-box;
+.menuheading,.sizeheading{
+    font-size: 30px;
+    float: left;
+    padding: 6px 0px 6px 0px;
+    border: solid 1px;
+    width: 100%;
+    text-align : center;
+    box-sizing: border-box;
+    margin-bottom: 20px;
 }
 
 .menuin{
 	float: left;
-	height: 85%;
+
 	width: 100%;
 	border: 5px;
 	box-sizing: border-box;
@@ -79,20 +81,10 @@ body{
 
 .size{
 	float: left;
-	height: 300px;
 	width: 100%;
 	box-sizing: border-box;
 }
-.sizeheading{
-		font-size: 1.6em;
-	float: left;
-	padding-top: 7px;
-	border: solid 1px;
-	width: 100%;
-	height: 15%;
-	box-sizing: border-box;
-		  text-align : center;
-}
+
 .sizein{
 		font-size: 20px;
 	float: left;
