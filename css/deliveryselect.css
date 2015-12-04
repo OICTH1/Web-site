@@ -109,16 +109,9 @@ body{
   height: 100%;
 }
 
-<<<<<<< HEAD
+
 .select-address td{
   border: solid 1px;
-=======
-.address{
-    float: left;
-    width: 100%;
-    height: 30px;
-    box-sizing: border-box;
->>>>>>> e7266391480ebe6908ad02744acfd61245d9ec1d
 }
 
 /*選択詳細*/
@@ -155,7 +148,6 @@ body{
   text-decoration: underline;
   clear: both;
 }
-
 
 /*********確定戻る***********/
 .kettei{
