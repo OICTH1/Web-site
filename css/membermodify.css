@@ -65,11 +65,11 @@ body{
     box-sizing: border-box;
 }
 
-.setumei {
+.description {
     font-size: 14px;
 }
 
-.setumei>p {
+.description>p {
     height: 5px;
 }
 /**********配達先住所部分***********/

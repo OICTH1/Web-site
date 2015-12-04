@@ -114,7 +114,7 @@ body{
     box-sizing: border-box;
 }
 
-.jyusyo{
+.address{
     float: left;
     width: 100%;
     height: 30px;
@@ -204,7 +204,7 @@ input {
 	font-size: 70%;
 }
 
-.setumei{font-size: 15px;}
+.description{font-size: 15px;}
 /**********配達先住所　入力　部分***********/
 
 /**********配達先住所部分***********/
