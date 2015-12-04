@@ -29,11 +29,7 @@ body{
 .cartheading,.deliveryheading {
     font-size: 30px;
     float: left;
-<<<<<<< HEAD
     padding: 6px 0;
-=======
-    padding: 6px 0px 6px 0px;
->>>>>>> e7266391480ebe6908ad02744acfd61245d9ec1d
     border: solid 1px;
     width: 100%;
     text-align : center;
