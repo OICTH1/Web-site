@@ -4,9 +4,9 @@
         <meta charset="UTF-8">
         <title>新規会員登録</title>
         <link rel="stylesheet" type="text/css" href="../css/newmember.css">
-        <script src="../js/jquery/jquery.js"></script>
-        <script src="../js/jquery/jquery.validationEngine.js"></script>
-        <script src="../js/jquery/jquery.validationEngine-ja.js"></script>
+        <script src="../js/jquery/jquery.js" type="text/javascript"></script>
+        <script src="../js/jquery/jquery.validationEngine.js" type="text/javascript"></script>
+        <script src="../js/jquery/languages/jquery.validationEngine-ja.js" type="text/javascript"></script>
         <link rel="stylesheet" href="../css/validationEngine.jquery.css">
         <script>
             $(function(){
@@ -36,31 +36,31 @@
                     <p>会社名</p>
                     <p>電話番号</p>
                     <p>生年月日</p>
-                    <p>性別</p>
+                    <p>性別　[必須]</p>
                 </div>
                 <div class="formright">
-                    <form action="" method="" name="formin" id="formin">
+                    <form action="" method="" name="formins" id="formin">
                         <p><input type="text" name="mail" size="60" class="validate[required,custom[email]]"></p>
-                        <p><input type="password" name="password1" size="60" class="validate[required]"></p>
+                        <p><input type="password" name="password1" size="60" class="validate[required],minSize[8]"><span class="description">　8文字以上</span></p>
                         <p><input type="password" name="password2" size="60" class="validate[required,equals[password1]]"></p>
                         <p>　<span class="description">性：</span><input type="text" name="name" class="validate[required]">　　<span class="description">名：</span><input type="text" name="name" class="validate[required]"></p>
                         <p><span class="description">セイ：</span><input type="text" name="kana" class="validate[required]">　<span class="description">メイ：</span><input type="text" name="kana" class="validate[required]"></p>
                         <p><input type="text" name="postal"  size="7" class="validate[required]">　　　<input type="button" name="search" value="検索"><span class="description">　　　　-は含まない</span></p>
-                        <p><input type="text" name="address" size="40" class="validate[]"></p>
-                        <p><input type="text" name="banti" size="4" class="validate[]"></p><span class="description"><p>　　　【例】東京都渋谷区恵比寿南1丁目2-3の場合、”2” を入力してください。</p></span>
+                        <p><input type="text" name="address" size="40" class="validate[required]"></p>
+                        <p><input type="text" name="banti" size="4" class=class="validate[required]"></p><span class="description"><p>　　　【例】東京都渋谷区恵比寿南1丁目2-3の場合、”2” を入力してください。</p></span>
                         <p><input type="text" name="gouikou" size="5"></p><span class="description"><p>　　　【例】東京都渋谷区恵比寿南1丁目2-3の場合、”2” を入力してください。</p></span>
                         <p><input type="text" name="tatemono" size="40"><span class="description">　　　部屋番号・フロア番号も含む</span>
                         </p>
                         <p><input type="text" name="kaisya" size="40"></p>
                         <p><input type="text" name="phone" class="validate[custom[phone]]"><span class="description">　　-を含めず続けて書く</span></p>
                         <p>西暦<input type="text" name="years" size="4">年　<input type="text" name="month" size="2">月　<input type="text" name="days" size="2">　　<span class="description">会員登録後の変更はできません</span></p>
-                        <p><label><input type="radio" name="sex" value="male">男性</label>　
-                        <label><input type="radio" name="sex" value="female">女性　　　　<span class="description">会員登録後の変更はできません</span></p></label>
-                    </form>
-                </div>
+                        <p><label><input type="radio" name="sex" value="male" class="validate[required]">男性</label>　
+                            <label><input type="radio" name="sex" value="female" class="validate[required]">女性　　　　<span class="description">会員登録後の変更はできません</span></p></label>
             </div>
+        </div>
             <div class="confirmation">
-                <a onclick="document.formin.submit();" class="biglink">確認画面へ</a>
+                <input type="submit" value="確認画面へ" class="biglink">
+                </form>
             </div>
             <div class="back">
                 <a class="biglink">戻る</a>

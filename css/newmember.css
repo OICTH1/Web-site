@@ -73,24 +73,28 @@ body{
 /**********配達先住所部分***********/
 /*********確定戻る***********/
 .confirmation{
-    font-size: 1.8em;
     padding-top: 0px;
     height: 40px;
     float: left;
     width: 30%;
     margin: 0% 35% 0% 35%;
     text-align : center;
-    border: solid 1px;
 }
 
-a.biglink{
+.confirmation>input{
+    font-size: 26px;
+    background-color: white;
+    border: solid 1px black;
+}
+
+.biglink{
     padding-top: 7px;
      display: block;
     height: 100%;
     width: 100%;
     box-sizing: border-box;
 }
-a.biglink:hover{
+.biglink:hover{
     background-color: chartreuse;
 }
 
