@@ -79,35 +79,43 @@ body{
 .summoney{
     float: left;
     width: 100%;
-    height: 35px;
-    padding-top: 5px;
-    font-size: 1.5em;
+    padding: 5px 0;
+    font-size: 32px;
     text-align: right;
     box-sizing: border-box;
 }
 
 .sum{
+    font-size: 32px;
     width: 20%;
     float: right;
     text-align: center;
     box-sizing: border-box;
 }
 
+.sum > span{
+  font-size: 32px;
+}
+
 /*住所洗濯フォーム*/
 .select-address{
+  table-layout: fixed;
   border: solid 1px;
   width: 100%;
 }
 
 /*ラジオボタン用ラベル*/
-.select-address label{
-  width: 100%;
-  height: 100%;
+.select-address input{
+
 }
 
 
 .select-address td{
   border: solid 1px;
+}
+.select-address td:nth-child(1){
+  width: 40px;
+  text-align: center;
 }
 
 /*選択詳細*/
@@ -118,7 +126,6 @@ body{
 /*選択詳細　タイトル*/
 .select-address h3{
   margin: 0;
-  margin-bottom: 1em;
 }
 /*登録住所　詳細*/
 #registered-address{
@@ -126,11 +133,16 @@ body{
 }
 
 /***********住所指定欄************/
+.other-form{
+  display: none;
+}
+
 .other-form > div:not(:last-child){
   margin-bottom: 2.5em;
 }
 .form-label{
   float: left;
+  min-width: 50%;
   margin-bottom: 1em;
 }
 
@@ -140,31 +152,25 @@ body{
 }
 
 .form-describe{
+  margin-left: 1em;
   font-size: 14px;
   text-decoration: underline;
   clear: both;
 }
 
 /*********確定戻る***********/
-.kettei{
-    font-size: 1.8em;
-    padding-top: 7px;
+.kettei,.back{
+
+    padding: 7px;
     height: 40px;
-    float: left;
-    width: 20%;
-    margin: 0% 40% 0% 40%;
+    width: 15%;
+    margin: 10px auto;
     text-align : center;
     border: solid 1px;
 }
 
-.back{
-    font-size: 1.6em;
-    padding-top: 7px;
-    height: 35px;
-    float: left;
-    width: 20%;
-    margin: 2% 40% 0% 40%;
-    text-align : center;
-    border: solid 1px;
+.kettei > a , .back > a{
+  font-size: 32px;
 }
+
 /*********確定戻る***********/

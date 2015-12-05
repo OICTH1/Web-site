@@ -11,18 +11,19 @@
                     alert("test");
                 });
 
-                $('input[name="delivery"]:radio').change( function(){
-                    var $delivery = $('.deliveryin');
-                    if($delivery.hasClass('open')) {
-                        $delivery.removeClass('open');
-                        $delivery.slideUp();
+                $('input[name="select-address"]').change( function(){
+                    if($('input[name="select-address"]:checked').val() == "other"){
+                      $(".other-form").slideDown('normal',function(){
+                            $('body').animate({scrollTop:$('.select-address').position()['top']});
+                      });
 
                     } else {
-                        $delivery.addClass('open');
-                        $delivery.slideDown();
+                      $(".other-form").slideUp('slow');
                     }
+
                 })
-        });
+              });
+
         </script>
     </head>
     <body>
@@ -104,7 +105,7 @@
                 <!--==========登録している住所=====================-->
               <tr>
                 <td>
-                    <input type="radio" name="name" value="" id="select-address">
+                    <input type="radio" name="select-address" value="registered" id="select-address">
                 <td>
                   <h3>登録している住所に配達する</h3>
                   <div id="registered-address">
@@ -122,7 +123,7 @@
               </tr>
               <tr>
                 <td>
-                  <input type="radio" name="name" value="" id="select-other">
+                  <input type="radio" name="select-address" value="other" id="select-other">
                 </td>
                 <td>
                   <h3>住所を指定して配達する</h3>
@@ -134,7 +135,7 @@
                       <div class="form-label required">郵便番号</div>
                       <div class="form-input">
                         <input type="text" name="postal-code" value="">
-                        <input type="button" name="address-search" value="検索" id="address-search">
+                        <input type="button" name="address-search" value="自動検索" id="address-search">
                       </div>
                       <div class="form-describe">-は含まない</div>
                     </div>
@@ -174,7 +175,8 @@
                 </td>
               </tr>
             </table>
-                    <div class="kettei">
+            
+            <div class="kettei">
                 <a>決定</a>
             </div>
             <div class="back">
