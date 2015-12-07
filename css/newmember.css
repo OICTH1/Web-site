@@ -23,9 +23,9 @@ body{
 
 /*******見出しの所****/
 .formheading {
-    font-size: 1.8em;
+    font-size: 30px;
     float: left;
-    padding: 6px 0;
+    padding: 6px 0px 6px 0px;
     border: solid 1px;
     width: 100%;
     text-align : center;
@@ -38,7 +38,6 @@ body{
     float: left;
     font-size: 22px;
     width: 100%;
-    height: 740px;
     margin-bottom: 20px;
     padding: 10px;
     border: solid 1px;
@@ -64,7 +63,9 @@ body{
     box-sizing: border-box;
 }
 .description {
+    padding-left: 20px;
     font-size: 14px;
+    text-decoration: underline;
 }
 
 .description>p {
