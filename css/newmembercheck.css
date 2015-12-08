@@ -97,8 +97,6 @@ body{
 /*********確定戻る***********/
 .kakutei{
     font-size: 30px;
-    padding-top: 7px;
-    height: 40px;
     float: left;
     width: 30%;
     margin: 0% 35% 0% 35%;
@@ -107,13 +105,24 @@ body{
 }
 
 .modify{
-    font-size: 1.6em;
-    padding-top: 7px;
-    height: 35px;
+    font-size: 25px;
     float: left;
     width: 20%;
     margin: 2% 40% 0% 40%;
     text-align : center;
     border: solid 1px;
 }
+
+a.biglink{
+    padding-top: 7px;
+    display: block;
+    padding: 8px 0px;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+}
+a.biglink:hover{
+    background-color: chartreuse;
+}
+
 /*********確定戻る***********/
