@@ -23,7 +23,7 @@ body{
 
 /*******見出しの所****/
 .logheading {
-    font-size: 1.8em;
+    font-size: 28px;
     float: left;
     padding: 6px 0;
     border: solid 1px;
@@ -54,7 +54,7 @@ body{
     float: left;
     padding: 8px;
     margin-top: 20px;
-    height: 46px;
+    height: 48px;
     width: 100%;
     border: solid 1px;
     box-sizing: border-box;
@@ -68,12 +68,60 @@ body{
     overflow: hidden;
     text-overflow: ellipsis;
 }
-.titleright {
+/*.titleright {
     font-size: 30px;
     border: solid 2px;
     float: right;
+}*/
+
+/*オープン用アイコン*/
+.openicon {
+    height: 40px;
+    width: 40px;
+    display: block;
+    position: relative;
 }
 
+.openicon{
+    height: 20px;
+    float: right;
+}
+
+.openicon:before {
+    content: '';
+    height: 0;
+    width: 0;
+    display: block;
+    border: 20px transparent solid;
+    border-bottom-width: 0;
+    border-top-color: #333;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+/*クローズ用アイコン*/
+.closeicon {
+    height: 40px;
+    width: 40px;
+    display: block;
+    position: relative;
+}
+
+.closeicon {
+    float: right;
+    height: 20px;
+}
+
+.closeicon:before {
+    content: '';
+    height: 0;
+    width: 0;
+    display: block;
+    border: 20px transparent solid;
+    border-top-width: 0;
+    border-bottom-color: #333;
+}
+/*アイコン終わり*/
 .datail{
     display: none;
 }
