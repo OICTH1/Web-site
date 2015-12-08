@@ -23,7 +23,7 @@ body{
 
 /*******見出しの所****/
 .cartheading,.deliveryheading {
-    font-size: 1.8em;
+    font-size: 28px;
     float: left;
     padding: 6px 0;
     border: solid 1px;
@@ -116,7 +116,7 @@ body{
 /**********配達先住所部分***********/
 /*********確定戻る***********/
 .kakutei{
-    font-size: 1.8em;
+    font-size: ;
     padding-top: 7px;
     height: 40px;
     float: left;
