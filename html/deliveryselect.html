@@ -4,23 +4,31 @@
         <meta charset="UTF-8">
         <title>配達先選択</title>
         <link rel="stylesheet" type="text/css" href="../css/deliveryselect.css">
-        <link rel="stylesheet" href="../css/validationEngine.jquery.css">
         <script type="text/javascript" src="../js/jquery/jquery.js"></script>
+<<<<<<< HEAD
         <script src="../js/jquery/jquery.validationEngine.js" type="text/javascript"></script>
         <script src="../js/jquery/languages/jquery.validationEngine-ja.js" type="text/javascript"></script>
+=======
+>>>>>>> parent of ee47763... フォームのバリデーションチェック
         <script>
             $(function(){
+                $('.kettei').click(function(){
+                    alert("test");
+                });
+
                 $('input[name="select-address"]').change( function(){
                     if($('input[name="select-address"]:checked').val() == "other"){
                       $(".other-form").slideDown('normal',function(){
                             $('body').animate({scrollTop:$('.select-address').position()['top']});
                       });
+
                     } else {
                       $(".other-form").slideUp('slow');
                     }
+
                 })
-                jQuery("#other-form").validationEngine();
               });
+
         </script>
     </head>
     <body>
@@ -125,40 +133,45 @@
                 <td>
                   <h3>住所を指定して配達する</h3>
 
-                  <form class="other-form" id="other-form">
+                  <form class="other-form">
                     <hr>
                     <!--郵便番号-->
                     <div class="form-postal">
-                        <div class="form-label required">郵便番号　[必須]</div>
-                        <div class="form-input">
-                            <input type="text" name="postal-code" value="" class="validate[required]">
+                      <div class="form-label required">郵便番号</div>
+                      <div class="form-input">
+                        <input type="text" name="postal-code" value="">
                         <input type="button" name="address-search" value="自動検索" id="address-search">
                       </div>
                       <div class="form-describe">-は含まない</div>
                     </div>
                     <!--都道府県、市区町村-->
                     <div class="form-address-1">
-                        <div class="form-label required">住所　[必須]</div>
-                        <div class="form-input"><input type="text" name="address1" value="" class="validate[required]"></div>
+                      <div class="form-label required">住所</div>
+                      <div class="form-input"><input type="text" name="address1" value=""></div>
                       <div class="form-describe">【例】東京都渋谷区恵比寿南1丁目2-3の場合、”東京都渋谷区恵比寿南1丁目” を入力してください。</div>
                     </div>
                     <!--番地-->
                     <div class="form-address-2">
-                      <div class="form-label required">番地　[必須]</div>
-                        <div class="form-input"><input type="text" name="address2" value="" class="validate[required]"></div>
+                      <div class="form-label required">番地</div>
+                      <div class="form-input"><input type="text" name="address2" value=""></div>
                       <div class="form-describe">【例】東京都渋谷区恵比寿南1丁目2-3の場合、”2” を入力してください。</div>
                     </div>
                     <!--号-->
                     <div class="form-address-3">
-                        <div class="form-label">号　[必須]</div>
-                        <div class="form-input"><input type="text" name="address3" value="" class="validate[required]"></div>
+                      <div class="form-label">号</div>
+                      <div class="form-input"><input type="text" name="address3" value=""></div>
                       <div class="form-describe">【例】東京都渋谷区恵比寿南1丁目2-3の場合、”3” を入力してください。</div>
                     </div>
                     <h3>マンション、ビル、アパートの場合</h3>
                     <!--建物名-->
                     <div class="form-builname">
+<<<<<<< HEAD
                         <div class="form-label">建物名</div>
                         <div class="form-input"><input type="text" name="billname" value=""></div>
+=======
+                      <div class="form-label">建物名</div>
+                      <div class="form-input"><input type="text" name="billname" value=""></div>
+>>>>>>> parent of ee47763... フォームのバリデーションチェック
                       <div class="form-describe">部屋番号・フロア番号も含む</div>
                     </div>
                     <!--会社名-->
@@ -167,16 +180,17 @@
                       <div class="form-input"><input type="text" name="companyname" value=""></div>
                       <div class="form-describe"></div>
                     </div>
+
+                  </form>
                 </td>
               </tr>
             </table>
             
-            <div class="confirmation">
-                <input type="submit" value="決定" class="biglink">
+            <div class="kettei">
+                <a>決定</a>
             </div>
-            </form>
             <div class="back">
-                <a class="biglink">戻る</a>
+                <a>戻る</a>
             </div>
         </div>
     </body>

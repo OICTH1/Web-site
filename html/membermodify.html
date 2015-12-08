@@ -4,20 +4,6 @@
         <meta charset="UTF-8">
         <title>会員情報編集</title>
         <link rel="stylesheet" type="text/css" href="../css/membermodify.css">
-        <script src="../js/jquery/jquery.js" type="text/javascript"></script>
-        <script src="../js/jquery/jquery.validationEngine.js" type="text/javascript"></script>
-        <script src="../js/jquery/languages/jquery.validationEngine-ja.js" type="text/javascript"></script>
-        <link rel="stylesheet" href="../css/validationEngine.jquery.css">
-        <script>
-            $(function(){
-        //            pass = $('#pass1').val();
-        //            if (!pass){
-        //            alert(str)}else{
-                    jQuery("#formin").validationEngine();
-        //       };
-
-            });
-        </script>
     </head>
     <body>
         <div class="header"></div>
@@ -33,7 +19,7 @@
                     <p>性別</p>
                     <p>郵便番号</p>
                     <p>住所</p>
-                    <p>番地</p><span class="description"><p>　</p></span>
+                    <p>番地　[必須]</p><span class="description"><p>　</p></span>
                     <p>号以降</p><span class="description"><p>　</p></span>
                     <p>建物名</p>
                     <p>会社名</p>
@@ -44,29 +30,42 @@
                     <p>確認のためもう一度</p>
                 </div>
                 <div class="formright">
+<<<<<<< HEAD
                     <form action="" method="" id="formin">
                         <p><span class="description">性　：</span><input type="text" name="name">　<span class="description">名　：</span><input type="text" name="name"></p>
+=======
+                    <form action="" method="">
+                        <p>　<span class="description">性：</span><input type="text" name="name">　　<span class="description">名：</span><input type="text" name="name"></p>
+>>>>>>> parent of ee47763... フォームのバリデーションチェック
                         <p><span class="description">セイ：</span><input type="text" name="kana">　<span class="description">メイ：</span><input type="text" name="kana"></p>
-                        <p>西暦　<span class="years">1900</span>　年　<span class="month">10</span>　月　<span class="days">10</span>　日　　<span class="description">（後で変更できません）</span></p>
-                        <p><span class="sex">男性</span>　　　　　　　　　　　<span class="description">（後で変更できません）</span></p>
-                        <p><input type="text" name="Postal"  size="7">　　　<input type="button" name="search" value="検索" id="search"><span class="description">　　　　（-は含まない）</span></p>
+                        <p>西暦　<span class="years">1900</span>　年　<span class="month">10</span>　月　<span class="days">10</span>　日　　<span class="description">変更できません</span></p>
+                        <p><span class="sex">男性</span>　　　　　　　　　　　<span class="description">変更できません</span></p>
+                        <p><input type="text" name="Postal"  size="7">　　　<input type="button" name="search" value="検索"><span class="description">　　　　-は含まない</span></p>
                         <p><input type="text" name="address" size="40"></p>
                         <p><input type="text" name="banti" size="4"></p><span class="description"><p>　　　【例】東京都渋谷区恵比寿南1丁目2-3の場合、”2” を入力してください。</p></span>
                         <p><input type="text" name="gouikou" size="5"></p><span class="description"><p>　　　【例】東京都渋谷区恵比寿南1丁目2-3の場合、”2” を入力してください。</p></span>
                         <p><input type="text" name="tatemono" size="40"><span class="description">　　　部屋番号・フロア番号も含む</span>
                         </p>
                         <p><input type="text" name="kaisya" size="40"></p>
+<<<<<<< HEAD
                         <p><input type="text" name="phone"><span class="description">　　（-を含めず続けて書く）</span></p>
                         <p><input type="text" name="mail1" size="60" class="validate[custom[email]]"></p>
                         <p><input type="text" name="mail2" size="60" class="validate[custom[email]"></p>
                         <p><input type="password" id="pass1" name="pass1" size="60" class="validate[minSize[1]"><span class="description">　　（8文字以上）</span></p>
                         <p><input type="password" name="pass2" size="60" class="validate[equals[pass1]]"></p>
+=======
+                        <p><input type="text" name="phone"><span class="description">　　-を含めず続けて書く</span></p>
+                        <p><input type="text" name="mail1" size="60" ></p>
+                        <p><input type="text" name="mail2" size="60" ></p>
+                        <p><input type="text" name="password1" size="60"></p>
+                        <p><input type="text" name="password2" size="60"></p>
+                    </form>
+>>>>>>> parent of ee47763... フォームのバリデーションチェック
                 </div>
             </div>
             <div class="modify">
-                <input type="submit" value="編集完了" class="biglink">
+                <a>編集する</a>
             </div>
-                </form>
             <div class="back">
                 <a>編集せず戻る</a>
             </div>

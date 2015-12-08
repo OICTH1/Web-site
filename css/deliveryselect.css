@@ -159,38 +159,18 @@ body{
 }
 
 /*********確定戻る***********/
-.confirmation {
-    padding: 20px 0px;
-    float: left;
-    width: 30%;
-    margin: 0% 35% 0% 35%;
-    text-align : center;
-}
+.kettei,.back{
 
-.confirmation>input{
-    font-size: 32px;
-    background-color: white;
-    border: solid 1px black;
-}
-
-.biglink{
-    padding-top: 7px;
-    display: block;
-    height: 100%;
-    width: 100%;
-    box-sizing: border-box;
-}
-.biglink:hover{
-    background-color: chartreuse;
-}
-.back{
-    float: left;
-    width: 20%;
-    margin: 0% 40% 0% 40%;
+    padding: 7px;
+    height: 40px;
+    width: 15%;
+    margin: 10px auto;
     text-align : center;
     border: solid 1px;
 }
-.back a{
-    font-size: 32px;
+
+.kettei > a , .back > a{
+  font-size: 32px;
 }
+
 /*********確定戻る***********/
