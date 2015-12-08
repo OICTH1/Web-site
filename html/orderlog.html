@@ -12,16 +12,15 @@
                 var $title = $(this).children('.title');
                 if($datail.hasClass('open')) {
                     $datail.removeClass('open');
-                    $datail.slideUp('slow');
+                    $datail.slideUp();
                     var $a = $title.find('.titleright');
-                    $a.removeClass('closeicon');
-                    $a.addClass('openicon');
+                    $a.text('詳細');
+                    
                 } else {
                     $datail.addClass('open');
-                    $datail.slideDown('slow');
+                    $datail.slideDown();
                     var $a = $title.find('.titleright');
-                    $a.removeClass('openicon');
-                    $a.addClass('closeicon');
+                    $a.text('閉じる');
                 }
             });
             });
@@ -36,7 +35,7 @@
             <div class="log">
                 <ul class="log-list" style="list-style:none">
                     <li class="log-list-item">
-                        <div class="title"><span class="titleleft">ソーセージナラベターノ(L):ソーセージナラベターノ(L):ソーセージナラベターノあ</span><span class="titleright openicon"></span></div>
+                        <div class="title"><span class="titleleft">ソーセージナラベターノ(L):ソーセージナラベターノ(L):ソーセージナラベターノあ</span><span class="titleright">詳細</span></div>
                         <div class="datail">
                             <div class="cart">
                                 <div class="cartin">
@@ -82,7 +81,7 @@
                         </div>
                     </li>
                     <li class="log-list-item">
-                        <div class="title"><span class="titleleft">ソーセージナラベターノ(L):ソーセージナラベターノ(L):ソーセージナラベターノあ</span><span class="titleright openicon"></span></div>
+                        <div class="title"><span class="titleleft">ソーセージナラベターノ(L):ソーセージナラベターノ(L):ソーセージナラベターノあ</span><span class="titleright">詳細</span></div>
                         <div class="datail">
                             <div class="cart">
                                 <div class="cartin">
@@ -128,7 +127,7 @@
                         </div>
                     </li>
                     <li class="log-list-item">
-                        <div class="title"><span class="titleleft">ソーセージナラベターノ(L):ソーセージナラベターノ(L):ソーセージナラベターノあ</span><span class="titleright openicon"></span></div>
+                        <div class="title"><span class="titleleft">ソーセージナラベターノ(L):ソーセージナラベターノ(L):ソーセージナラベターノあ</span><span class="titleright">詳細</span></div>
                         <div class="datail">
                             <div class="cart">
                                 <div class="cartin">
@@ -174,7 +173,7 @@
                         </div>
                     </li>
                     <li class="log-list-item">
-                        <div class="title"><span class="titleleft">ソーセージナラベターノ(L):ソーセージナラベターノ(L):ソーセージナラベターノあ</span><span class="titleright openicon"></span></div>
+                        <div class="title"><span class="titleleft">ソーセージナラベターノ(L):ソーセージナラベターノ(L):ソーセージナラベターノあ</span><span class="titleright">詳細</span></div>
                         <div class="datail">
                             <div class="cart">
                                 <div class="cartin">

@@ -23,7 +23,7 @@ body{
 /******カート部分*******/
 /*見出しの所*/
 .cartheading {
-    font-size: 28px;
+    font-size: 1.8em;
     float: left;
     padding: 6px 0;
     border: solid 1px;
