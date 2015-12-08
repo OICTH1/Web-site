@@ -165,17 +165,30 @@ body{
 	box-sizing: border-box;
 }
 /*********セレクト&数量選択カート移動***********/
+
+
 /****一覧へ戻る******/
 
-.itiran{
+.list{
 	float: left;
-    font-size: 20px;
-    padding-top:5px; 
-	height: 40px;
+    font-size: 25px; 
 	width: 20%;
     margin: 8px 40%;
     border: solid 1px;
 	text-align : center;
 	box-sizing: border-box;
 }
+
+a.biglink{
+    padding-top: 7px;
+    display: block;
+    padding: 8px 0px;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+}
+a.biglink:hover{
+    background-color: chartreuse;
+}
+
 /****一覧へ戻る******/

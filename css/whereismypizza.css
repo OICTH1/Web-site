@@ -125,9 +125,7 @@ body{
 /*******whereismypizza*********/
 /*********確定戻る***********/
 .kakutei{
-    font-size: ;
-    padding-top: 7px;
-    height: 40px;
+    font-size: 32px;
     float: left;
     width: 20%;
     margin: 2% 40% 0% 40%;
@@ -137,12 +135,22 @@ body{
 
 .back{
     font-size: 1.6em;
-    padding-top: 7px;
-    height: 35px;
     float: left;
     width: 20%;
-    margin: 2% 40% 0% 40%;
+    margin: 2% 40% 1% 40%;
     text-align : center;
     border: solid 1px;
+}
+
+a.biglink{
+    padding-top: 7px;
+    display: block;
+    padding: 8px 0px;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+}
+a.biglink:hover{
+    background-color: chartreuse;
 }
 /*********確定戻る***********/
