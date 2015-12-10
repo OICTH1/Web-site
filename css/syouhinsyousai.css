@@ -180,9 +180,8 @@ body{
 }
 
 a.biglink{
-    padding-top: 7px;
     display: block;
-    padding: 8px 0px;
+    padding: 4px 0px;
     height: 100%;
     width: 100%;
     box-sizing: border-box;

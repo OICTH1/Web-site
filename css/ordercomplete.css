@@ -45,8 +45,6 @@ body{
 
 .top{
     font-size: 1.6em;
-    padding-top: 7px;
-    height: 40px;
     float: left;
     width: 30%;
     margin: 5% 35% 2% 35%;
@@ -54,4 +52,14 @@ body{
     border: solid 1px;
 }
 
+.biglink{
+    padding: 7px;
+    display: block;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+}
+.biglink:hover{
+    background-color: chartreuse;
+}
 /*******Topページに戻る部分*******/

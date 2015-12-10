@@ -38,6 +38,7 @@ body{
     float: left;
     font-size: 22px;
     width: 100%;
+    min-height: 90%;
     margin-bottom: 20px;
     padding: 0px 10px 20px 10px;;
     border: solid 1px;
@@ -184,10 +185,19 @@ body{
 /**********注文履歴一覧***********/
 /*********戻る***********/
 
+.biglink{
+    padding: 7px;
+    display: block;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+}
+.biglink:hover{
+    background-color: chartreuse;
+}
+
 .back{
-    font-size: 1.6em;
-    padding-top: 7px;
-    height: 35px;
+    font-size: 26px;
     float: left;
     width: 20%;
     margin: 2% 40% 0% 40%;

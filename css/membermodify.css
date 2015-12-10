@@ -86,13 +86,13 @@ body{
 }
 
 .modify>input{
-    font-size: 25px;
+    font-size: 28px;
     background-color: white;
     border: solid 1px black;
 }
 
 .biglink{
-    padding-top: 7px;
+    padding: 7px;
     display: block;
     height: 100%;
     width: 100%;
@@ -103,9 +103,7 @@ body{
 }
 
 .back{
-    font-size: 1.6em;
-    padding-top: 7px;
-    height: 40px;
+    font-size: 26px;
     float: left;
     width: 20%;
     margin: 0% 0% 0% 15%;
