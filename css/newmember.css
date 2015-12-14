@@ -54,6 +54,7 @@ body{
     box-sizing: border-box;
 }
 
+
 .formright{
     float:  left;
     height: 100%;
@@ -62,20 +63,22 @@ body{
     text-align: left;
     box-sizing: border-box;
 }
+
+.formrightin,.formleftin{
+    height: 40px;
+    padding: 5px 0px;
+}
+
 .description {
     padding-left: 20px;
     font-size: 14px;
     text-decoration: underline;
 }
 
-.description>p {
-    height: 5px;
-}
 /**********配達先住所部分***********/
 /*********確定戻る***********/
 .confirmation{
     padding-top: 0px;
-    height: 40px;
     float: left;
     width: 30%;
     margin: 0% 35% 0% 35%;
@@ -83,7 +86,7 @@ body{
 }
 
 .confirmation>input{
-    font-size: 26px;
+    font-size: 28px;
     background-color: white;
     border: solid 1px black;
 }

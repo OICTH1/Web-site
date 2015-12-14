@@ -1,4 +1,4 @@
-// キャeの要素を取得する
+// キャンバスの要素を取得する
 var canvas = document.getElementById( 'map-canvas' ) ;
 
 // 中心の位置座標を指定する
