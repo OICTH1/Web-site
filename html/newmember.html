@@ -22,8 +22,8 @@
             </div>
             <div class="form">
                 <div class="formleft">
-                    <div class="formleftin">メールアドレス</div>
-                    <div class="formleftin">パスワード</div>
+                    <div class="formleftin">メールアドレス　[必須]</div>
+                    <div class="formleftin">パスワード　[必須]</div>
                     <div class="formleftin">確認のためもう一度</div>
                     <div class="formleftin">名前　[必須]<br></div>
                     <div class="formleftin">フリガナ　[必須]<br></div>
@@ -33,17 +33,17 @@
                     <div class="formleftin">号以降　[必須]</div><span class="description"></span>
                     <div class="formleftin">建物名</div>
                     <div class="formleftin">会社名</div>
-                    <div class="formleftin">電話番号</div>
-                    <div class="formleftin">生年月日</div>
+                    <div class="formleftin">電話番号　[必須]</div>
+                    <div class="formleftin">生年月日　[必須]</div>
                     <div class="formleftin">性別　[必須]</div>
                 </div>
                 <div class="formright">
                     <form action="" method="" name="formins" id="formin">
                         <div class="formrightin"><input type="text" name="mail" size="60" class="validate[required,custom[email]]"></div>
                         
-                        <div class="formrightin"><input type="password" name="password1" id="password1" size="60" class="validate[required],minSize[8]"><span class="description">　8文字以上</span></div>
+                        <div class="formrightin"><input type="password" name="password1" id="password1" size="50" class="validate[required],minSize[8]">　<span class="description">8文字以上</span></div>
                         
-                        <div class="formrightin"><input type="password" name="password2" size="60" class="validate[required,equals[password1]]"></div>
+                        <div class="formrightin"><input type="password" name="password2" size="50" class="validate[required,equals[password1]]"></div>
                         
                         <div class="formrightin">　<span class="description">性：</span><input type="text" name="name" class="validate[required]">　　<span class="description">名：</span><input type="text" name="name" class="validate[required]"></div>
                         
@@ -62,7 +62,7 @@
                         <div class="formrightin"><input type="text" name="kaisya" size="40"></div>
                         <div class="formrightin"><input type="text" name="phone" class="validate[custom[phone],required]"><span class="description">（-を含めず続けて書く）</span></div>
                         
-                        <div class="formrightin">西暦<input type="text" name="years" size="4" class="validate[required]">年　<input type="text" name="month" size="2" class="validate[required]">月　<input type="text" name="days" size="2" class="validate[required]"><span class="description">（会員登録後の変更はできません）</span></div>
+                        <div class="formrightin">西暦<input type="text" name="years" size="4" class="validate[required]">年　<input type="text" name="month" size="2" class="validate[required]">月　<input type="text" name="days" size="2" class="validate[required]">日<span class="description">（会員登録後の変更はできません）</span></div>
                         
                         <div class="formrightin"><label><input type="radio" name="sex" value="male" class="validate[required]">男性</label>　
                             <label><input type="radio" name="sex" value="female" class="validate[required]">女性　　　　<span class="description">会員登録後の変更はできません</span></div></label>
